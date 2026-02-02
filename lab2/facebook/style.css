@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f2f4f7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.left {
+    flex: 1;
+    padding: 0 32px 0 0;
+    margin-bottom: 200px;
+}
+
+.logo-wrapper {
+    padding-bottom: 16px;
+}
+
+.logo {
+    height: 106px;
+    margin-left: -28px;
+    margin-bottom: -20px;
+}
+
+h2 {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+
+    max-width: 450px;
+    margin: 0;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    width: 100%;
+    max-width: 400px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
+
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    padding: 0 12px;
+
+    font-size: 17px;
+}
+
+input[type="submit"] {
+    background-color: #0866ff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.fp {
+    display: block;
+    margin-top: 8px;
+    color: #0866ff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #42b72a;
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+.button-text {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.cp {
+    margin-top: 28px;
+    max-width: 400px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ll {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .left{
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 400px;
+    }
+
+    .login {
+        margin-top: 10px;
+    }
+}
