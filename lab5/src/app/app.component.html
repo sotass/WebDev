@@ -1,0 +1,26 @@
+<div style="display:flex; gap:20px; padding:20px">
+
+  <div style="width:200px">
+    <h2>Categories</h2>
+
+    <button
+      *ngFor="let c of categories"
+      (click)="selectCategory(c.id)"
+      [style.fontWeight]="c.id === selectedCategoryId ? 'bold' : 'normal'"
+      style="display:block; margin-bottom:10px">
+      {{ c.name }}
+    </button>
+  </div>
+
+  <div style="flex:1">
+    <p *ngIf="selectedCategoryId === null">
+      Choose a category 👈
+    </p>
+
+    <app-product-list
+      *ngIf="selectedCategoryId !== null"
+      [products]="visibleProducts">
+    </app-product-list>
+  </div>
+
+</div>
